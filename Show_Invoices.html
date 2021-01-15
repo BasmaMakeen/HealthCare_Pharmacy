@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="./Style.css" />
+    <title>Health Care</title>
+  </head>
+  <body>  
+    <header>
+     
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <i class="fas  fa-2x mx-3"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <img  src="logo3.png" class="rounded float-start" style="width: 100px; height: 130;" />
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">HOME
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a href="#" class="nav-link">Add Item</a>
+                  <div class="dropdown-content">
+                  <a href="#">Add with Image </a>
+                  <a href="Add_Item2.html">Add by pop form</a>
+                  </div>
+                </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link Active" href="Delete_Items.html">Remove Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Show_Items.html">Show Items</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a href="#" class="nav-link">Invoice</a>
+                  <div class="dropdown-content">
+                    <a href="buy_Invoice.html">Generate Buy</a>
+                    <a href="Sell_Invoice.html">Generate Sell</a>
+                    <a href="#">Search With ID </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <!-- </header> -->
+
+    <br><br><br>
+    <div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-8">
+      <input type="text" id="SelectInv" placeholder="Invoice Number"> </input>
+      <button id="btnASearch">Search</button>
+      <div id="showdata" ></div>  
+   </div></div></div></div>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br>
+  <footer class=" py-5 bg-dark"  >
+    <p class="text-light text-center">Copyright ©2021 All rights reserved | Basma Makeen</p>
+  </footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="show_invoice.js"></script>
+</body>
+</html>

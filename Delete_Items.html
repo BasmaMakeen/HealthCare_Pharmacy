@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="./Style.css" />
+    <title>Health Care</title>
+    <style>
+      .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>  
+    <header>
+     
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <i class="fas  fa-2x mx-3"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <img  src="logo3.png" class="rounded float-start" style="width: 100px; height: 130;" />
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home_User.html">HOME
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a href="#" class="nav-link">Add Item</a>
+                  <div class="dropdown-content">
+                    <a href="Add_Item.html">Add with Image </a>
+                    <a href="#">Add by pop form</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Active" href="#">Remove Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Show_Items.html">Show Items</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a href="#" class="nav-link">Invoice</a>
+                  <div class="dropdown-content">
+                    <a href="Create_Invoice.html">Generate One</a>
+                    <a href="Show_Invoices.html">Show All</a>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div><br><br><br>
+
+    </header>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-8">
+      <input type="text" id="SelectItem" placeholder="Product Number" style="background-color:  rgb(158, 148, 144) ; border-radius: 8px;"> </input>
+      <button id="btnShow" style="background-color:rgb(230, 111, 31) ; border-radius: 15px;">Show Products</button>
+      <button id="btnDelete" style="background-color:rgb(230, 111, 31) ; border-radius: 15px;">Delete Products</button>
+     <!-- <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEVBMTczNDg3QzA5MTFFNjk3ODM5NjQyRjE2RjA3QTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEVBMTczNDk3QzA5MTFFNjk3ODM5NjQyRjE2RjA3QTkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowRUExNzM0NjdDMDkxMUU2OTc4Mzk2NDJGMTZGMDdBOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowRUExNzM0NzdDMDkxMUU2OTc4Mzk2NDJGMTZGMDdBOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjjUmssAAAGASURBVHjatJaxTsMwEIbpIzDA6FaMMPYJkDKzVYU+QFeEGPIKfYU8AETkCYI6wANkZQwIKRNDB1hA0Jrf0rk6WXZ8BvWkb4kv99vn89kDrfVexBSYgVNwDA7AN+jAK3gEd+AlGMGIBFDgFvzouK3JV/lihQTOwLtOtw9wIRG5pJn91Tbgqk9kSk7GViADrTD4HCyZ0NQnomi51sb0fUyCMQEbp2WpU67IjfNjwcYyoUDhjJVcZBjYBy40j4wXgaobWoe8Z6Y80CJBwFpunepIzt2AUgFjtXXshNXjVmMh+K+zzp/CMs0CqeuzrxSRpbOKfdCkiMTS1VBQ41uxMyQR2qbrXiiwYN3ACh1FDmsdK2Eu4J6Tlo31dYVtCY88h5ELZIJJ+IRMzBHfyJINrigNkt5VsRiub9nXICdsYyVd2NcVvA3ScE5t2rb5JuEeyZnAhmLt9NK63vX1O5Pe8XaPSuGq1uTrfUgMEp9EJ+CQvr+BJ/AAKvAcCiAR+bf9CjAAluzmdX4AEIIAAAAASUVORK5CYII=" style="background-color: cornflowerblue;"> -->
+     <button type="button" class="btn btn-info btn-lg" id="btnAddForm" data-toggle="modal" data-target="#myModal" style="width: 400px; border-radius: 20px; background-color: rgb(247, 155, 18);">Update User</button>      
+     <!-- Modal -->
+     <div class="modal fade" id="myModal" role="dialog">
+       <div class="modal-dialog">
+       
+ 
+         <div class="modal-content">
+           <div class="modal-header bg-danger">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title " style="text-align: center " >User Details</h4>
+           </div>
+           <div class="modal-body">
+           <p > New User Name</p> <input id="New_user" type="text">
+           <p > New Password</p> <input id="New_pass" type="text">
+          </div>       
+        </div>
+        <div class="modal-footer bg-danger" >
+          <button type="button" id="btnUpdate"class="btn btn-default text-align:center" data-dismiss="modal">Submit </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+     <div id="showdata" ></div>  
+   </div></div></div></div><br><br><br><br>
+  
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <footer class=" py-5 bg-dark"  >
+    <p class="text-light text-center">All Copyright &copy; Basma Makeen website 2021</p>
+  </footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Delete_Items.js"></script>
+</body>
+</html>

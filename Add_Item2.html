@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="./Style.css" />
+
+
+    <title>Health Care</title>
+  </head>
+  <body>
+    
+    
+    <header>
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <i class="fas  fa-2x mx-3"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <img  src="logo3.png" class="rounded float-start" style="width: 100px; height: 130;" />
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">HOME
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+           
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a href="#" class="nav-link">Add Item</a>
+                  <div class="dropdown-content">
+                    <a href="Add_Item.html">Add with Image </a>
+                    <a href="#">Add by pop form</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Delete_Items.html">Remove Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Show_Items.html">Show Items</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a href="#" class="nav-link">Invoice</a>
+                  <div class="dropdown-content">
+                    <a href="#">Generate One</a>
+                    <a href="#">Show All</a>
+                  </div>
+                </div>
+              </li>
+             
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <br><br><br>
+    
+    <div class="container">
+
+      <div class="row">
+        <div class="col-4">
+          
+        </div>
+        <div class="col-4">
+          <div class="container">
+         
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" id="btnAddForm" data-toggle="modal" data-target="#myModal" style="width: 400px; border-radius: 20px; background-color: rgb(247, 155, 18);">Add new Medicien</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+        
+                <div class="modal-content">
+                  <div class="modal-header bg-danger">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title " style="text-align: center " >Medicien Detalis</h4>
+                  </div>
+                  <div class="modal-body">
+                  <p > Medicen Code</p> <input id="mCode" type="text">
+                  <p > Medicen Name</p> <input id="mName" type="text">
+                  <p > Medicen Countity</p> <input id="mCount" type="number">
+                  <p > Medicen Description</p> <input id="mDesc" type="text">
+                  <p > Medicen Price/one</p> <input id="mPrice" type="number">
+                  <p > Medicen Producton Date</p> <input id="mPD" type="date">
+                  <p > Medicen Expired Date</p> <input id="mED" type="date">
+                  <div>
+                    <!-- <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p> -->
+                    <!-- <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+                    <p><img id="output" width="300" /></p>
+                    <script>
+                       var loadFile = function(event) {
+         var image = document.getElementById('output');
+         console.log(image);
+         image.src = URL.createObjectURL(event.target.files[0]);
+         console.log(image.src);
+      };
+                    </script> -->
+                    
+                  </div>
+  
+                  </div>
+                  <div class="modal-footer bg-danger" >
+                    <button type="button" id="btnAdd"class="btn btn-default text-align:center" data-dismiss="modal">Add </button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+          
+        
+       <br>
+        <div class="card" style="width: 18rem;">
+
+          <div class="card-body">
+            <h5 class="card-title" id="mName1">Medicien name</h5>
+            <p class="card-text" id="mDesc1">Medicien Description......................</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"id='mCount1' >Prod Date</li>
+            <li class="list-group-item" id="mPD1">Prod Date</li>
+            <li class="list-group-item" id="mED1">Expire Date</li>
+          </ul>
+          <div class="card-body">
+        
+            
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </header>
+  </div>
+</div>
+  
+</div>
+</div>
+   <br> 
+  
+  <footer class=" py-5 bg-dark "   >
+    <p class="text-light text-center">Copyright ©2021 All rights reserved | Basma Makeen</p>
+  </footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Add_Item2.js"></script>
+</body>
+    </html>
